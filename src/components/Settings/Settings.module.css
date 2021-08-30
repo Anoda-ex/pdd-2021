@@ -1,0 +1,70 @@
+.row{
+    /* height: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-top: 15px;
+}
+.row+.row{
+    margin-top: 15px;
+}
+.title{
+    margin-right: 15px;
+}
+.authWrapper{
+    margin: 0 auto;
+    width: 300px;
+    
+}
+.authMode{
+    text-align: right;
+}
+.authMode:hover{
+    cursor: pointer;
+    margin-top: 10px;
+}
+.authTitle{
+    text-align: center;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.authInput{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+.authButton{
+    padding: 5px 10px;
+    /* width: 140px; */
+    height: 40px;
+    background-color: rgb(56, 155, 248);
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    transition: all .3s;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.authError{
+    margin-top: 15px;
+}
+.authButton:hover{
+    background-color: rgb(140, 228, 255);
+    cursor: pointer;
+    color: black;
+}
+@media (max-width: 560px){
+    .row{
+        font-size: 18px;
+    }
+   
+}

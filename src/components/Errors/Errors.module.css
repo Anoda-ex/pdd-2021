@@ -1,0 +1,33 @@
+.questTitles{
+    padding-left: 10px;
+   
+}
+.questTitle{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.questTitle:hover{
+    cursor: pointer;
+}
+.questTitle.active{
+    background-color: rgb(140, 228, 255);
+}
+.questTitle+.questTitle{
+    margin-top: 5px;
+}
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.title span{
+    border-bottom: 2px solid rgb(245, 60, 60);
+    
+}
+.titleNoErrors{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+}
