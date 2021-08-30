@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import './App.css'
 import {Context} from "./index";
 import {useAuthState} from "react-firebase-hooks/auth";
-import Loader from "./components/Loader";
+import Loader from "./components/UI/Loader/Loader";
 import {BrowserRouter,Switch,Redirect,Route } from "react-router-dom"
 import {TEST_ROUTE, LOGIN_ROUTE} from "./utils/consts";
 import {publicRoutes,privateRoutes} from "./routes"

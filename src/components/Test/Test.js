@@ -2,17 +2,13 @@ import React,{useContext,useEffect,useState} from 'react'
 import Container from '../../HOC/Container/Container'
 import {Context} from "../../index"
 import Errors from '../Errors/Errors'
-import Loader from '../Loader'
+import Loader from '../UI/Loader/Loader'
 import Questions from '../Questions/Questions'
 import Settings from '../Settings/Settings'
 import ThemeSelect from '../ThemeSelect/ThemeSelect'
 export default function Test(props) {
     const {auth, database} = useContext(Context)
-
-
-
     const [themes,setThemes]=useState([])
-    // const [UID,setUID]=useState("a1")
     const [selectThemes,setSelectThemes]=useState([0])
     const [errors,setErrors]=useState({})
     const [settings,setSettings]=useState({
@@ -175,7 +171,7 @@ export default function Test(props) {
     return (
         <div>
             <div>
-                <Container title="Список тем">
+                <Container title="Список тем" initHideContainer>
                     <ThemeSelect 
                         themes={themes} 
                         selectThemes={selectThemes} 
@@ -212,7 +208,6 @@ export default function Test(props) {
                         isAuth={!!UID}
                         exit={exit}
                         authError={authError}
-
                     >
                     </Settings>
                 </Container>

@@ -1,7 +1,10 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import classes from "./Container.module.css"
 export default function Container(props){
     const [showContainer, setShowContainer] = useState(true)
+    useEffect(() => {
+        setShowContainer(!props.initHideContainer)
+    }, [])
     return (
         <div className="container">
                 <div className={classes.topWrapper} onClick={()=>{setShowContainer(!showContainer)}}>
